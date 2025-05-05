@@ -10,7 +10,7 @@ private:
 
 public:
     void setNama(string pNama);
-    friend class siwa;
+    friend class siswa;
 };
 
 class siswa{
@@ -21,3 +21,13 @@ class siswa{
     void setId(int pId);
     void displayAll (orang &a);
 };
+
+void siswa::displayAll(orang &a){
+    cout << Id << endl << a.nama;
+}
+void orang::setNama(string pNama){
+    nama = pNama;
+}
+void siswa::setId(int pId){
+    Id = pId;
+}
