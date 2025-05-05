@@ -13,26 +13,32 @@ public:
     friend class siswa;
 };
 
-class siswa{
-    private:
+class siswa
+{
+private:
     int Id;
 
-    public:
+public:
     void setId(int pId);
-    void displayAll (orang &a);
+    void displayAll(orang &a);
 };
 
-void siswa::displayAll(orang &a){
-    cout << Id << endl << a.nama;
+void siswa::displayAll(orang &a)
+{
+    cout << Id << endl
+         << a.nama;
 }
-void orang::setNama(string pNama){
+void orang::setNama(string pNama)
+{
     nama = pNama;
 }
-void siswa::setId(int pId){
+void siswa::setId(int pId)
+{
     Id = pId;
 }
 
-int main(){
+int main()
+{
     orang joko;
     joko.setNama("joko susilo");
     siswa joko_siswa;
